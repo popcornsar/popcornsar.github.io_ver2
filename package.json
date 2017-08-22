@@ -33,6 +33,7 @@
     "express-session": "^1.15.5",
     "http": "0.0.0",
     "path": "^0.12.7",
-    "server-static": "^2.0.5"
+    "server-static": "^2.0.5",
+    "useragent": "^2.2.1"
   }
 }

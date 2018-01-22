@@ -2,4 +2,4 @@
 
 ## Getting Started
 * Run `npm install` in the root directory
-* Run `node start` in the root directory
+* Run `npm start` in the root directory

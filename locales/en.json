@@ -1,0 +1,214 @@
+{
+    "langver" : "en",
+    
+    "header" : {
+        "title" : "PopcornSAR",
+        "menu" : "MENU",
+
+        "nav_home" : "Home",
+        "nav_businessArea" : "Business Area",
+        "nav_ProductOverview" : "Product Overview",
+        "nav_serviceOverview" : "Service Overview",
+        "nav_companyInfo" : "Company Info",
+
+        "language" : "LANGUAGE",
+        "kr" : "Korean",
+        "en" : "English",
+        "jp" : "Japanese"
+    },
+
+    "section_header" :{
+        "heading" : "Welcome to PopcornSAR",
+        "exclamationMark" : "!",
+        "content" : "A startup specialized in AUTOSAR"
+    },
+
+   
+    "businessArea" : {
+        "title" : "BUSINESS AREA",
+        "sub_title" : "PopcornSAR is an AUTOSAR specialized company that supports <br/>customers’ overall AUTOSAR project. ",
+        "content_1_1" : "AUTOSAR Tool Development",
+        "content_1_2" : "· Classic Platform Tool",
+        "content_1_3" : "· Adaptive Platform Tool",
+        "content_2_1" : "AUTOSAR Training and Engineering Service",
+        "content_2_2" : "· AUTOSAR training",
+        "content_2_3" : "· AUTOSAR Engineering Service",
+        "content_2_4" : "(Include Adaptive Platform advanced development projects)",
+        "content_3_1" : "In-house Tool Development",
+        "content_3_2" : "· Develop customization Tool according to the customer request. ",
+        "content_3_3" : "· PopcornSAR Tool(CP/AP) can be customized with specific request."
+    },
+
+    "productOverview" : {
+        "title" : "PRODUCT OVERVIEW",
+        "menu1" : "AP Tool",
+        "menu2" : "AP Implementation Full-Set",
+        "menu3" : "AP Development Environment for SaaS Combination type",
+        "menu4" : "AP Network and Diagnostic Test",
+        "menu5" : "CP Tool",
+        "menu1_title" : "System Design Tools based on Adaptive Platform Standards",
+        "menu1_sub_title" : "< Support both Classic Platform’s System Design and ECU Configuration function >",
+        "menu1_text_title1" : "AUTOSAR version support",
+        "menu1_text_content1_1" : "· Adaptive Platform : R17/10",
+        "menu1_text_content1_2" : "· Classic Platform : 4.0.3 ~ 4.3.0",
+        "menu1_text_title2" : "Key features for the Adaptive Platform",
+        "menu1_text_content2_1" : "· AP Application Design",
+        "menu1_text_content2_2_1" : "· Support functions for Application Manifest,",
+        "menu1_text_content2_2_2" : "Service Instance Manifest, Machine Manifest",
+        "menu1_text_content2_2_3" : "",
+        "menu1_text_title3" : "Key features for the Classic Platform",
+        "menu1_text_content3_1" : "· System design",
+        "menu1_text_content3_2" : "· ECU Configuration",
+        "menu1_text_content3_3" : "· VSMD description",
+        "menu2_title" : "Provide Full-Set to implement Adaptive Platform ",
+        "menu2_text_title1" : "Major offerings",
+        "menu2_text_content1_1" : "Provide Full-set to implement Adaptive Platform advanced development projects(Design tool –Generator-sample-board)",
+        "menu2_text_content1_2" : "Offering practical sample and C++ Porting Guide",
+        "menu2_text_content1_3" : "Provide training how to use tool and sample to practice",
+        "menu3_title" : "Provides AP development environment that can manage AP’s large-scale project with SaaS",
+        "menu3_sub_title1_1" : "The Adaptive Platform implementation differs greatly from the existing Classic Platform implementation. One of the biggest differences is the capacity that needed for the project.",
+        "menu3_sub_title1_2" : "To process AP project, at least 2~30GB of hard disk capacity is required to make work space. Openly, it needs a total capacity of 300GB or morey for software revision history management.",
+        "menu3_sub_title1_3" : "AP development environment combined with SaaS makes customers easy to manage AP project.",
+        "menu3_text_title1" : "Key functions",
+        "menu3_text_content1" : "· Provides software build automation function for Adaptive Platform projects",
+        "menu3_text_content2" : "· SaaS-based project source code management",
+        "menu3_text_content3" : "· Optional",
+        "menu3_text_content4_1" : "① Using Public Cloud ",
+        "menu3_text_content4_2" : "② Using cloud server of in-house",
+        "menu4_title" : "Next Generation Network and Diagnostic Test Tool for Adaptive Platform",
+        "menu4_text_title1" : "",
+        "menu4_text_title2" : "",
+        "menu5_title" : "CP Tool supports system design and ECU configuration function for Classic Platform",
+        "menu5_sub_title" : "",
+        "menu5_text_title1" : "System Design",
+        "menu5_text_content1_1" : "· AUTOSAR Software Component design, System design(ECU and Communication Networks) tools",
+        "menu5_text_content1_2" : "· Easy to AUTOSAR Design by Text Modeling",
+        "menu5_text_content1_3" : "· Provides 49 examples of ECUs in compliance with the AUTOSAR standard",
+        "menu5_text_content1_4" : "Compatibility to ARXMLs from other AUTOSAR tools" ,
+        "menu5_text_title2" : "ECU Configuration",
+        "menu5_text_content2_1" : "· Supports for Configuration and Validation to AUTOSAR Basic Softwares(BSW) and Run-Time Environment (RTE)",
+        "menu5_text_content2_2" : "· Provide validation and guidance for Parameters Configuration",
+        "menu5_text_content2_3" : "· Supports to create new VSMD(Vendor Specific Module Definition) and provide Configuration Editor without special developments",
+        "menu5_tool_ver" : "AUTOSAR ver. : Classic Platform 4.0.3 ~ 4.3.0"
+    },
+
+    "serviceOverview" : {
+        "title" : "SERVICE OVERVIEW",
+        "menu6" : "AUTOSAR Training",
+        "menu7" : "Engineering Service",
+        "menu8" : "In-house Tool development",
+        
+        "menu6_title" : "Providing practical training for the mass production project based on AUTOSAR",
+        "menu6_text_title1" : "Educational scope",
+        "menu6_text_content1_1" : "Classic Platform : AUTOSAR 4.x ",
+        "menu6_text_content1_2" : "Adaptive Platform : R17-10",
+
+        "menu6_text_title2" : "Classic Platform training Overview",
+
+        "menu6_text_title3" : "Adaptive Platform training Overview",
+       
+        "menu6_text_title2_1" : "Beginner Course",
+        "menu6_text_content2_1_1" : "Classic Platform AUTOSAR 4.x",
+        "menu6_text_content2_1_2" : "BSW & SW-C Basis",
+
+        "menu6_text_title2_1_1" : "Target",
+        "menu6_text_content2_1_3" : "· Classic Platform AUTOSAR 4.x",
+        "menu6_text_content2_1_4" : "beginner (Development manager)",
+
+        "menu6_text_title2_1_2" : "Prerequisites",
+        "menu6_text_content2_1_5" : "UML, XML, C language",
+
+        "menu6_text_title2_1_3" : "Agenda",
+        "menu6_text_content2_1_6" : "Understanding basic terms and specifications, types of BSW<br/>Understanding system design and ECU configuration<br/>How to analyze UML<br/>How to make and verify ARXML<br/> How to reuse SW-C<br/>",
+        
+        "menu6_text_title2_2" : "Advanced Course",
+        "menu6_text_content2_2_1" : "Classic Platform AUTOSAR 4.x",
+        "menu6_text_content2_2_2" : "Rte Programming",
+        
+        "menu6_text_title2_2_1" : "Target",
+        "menu6_text_content2_2_3" : "· Classic Platform AUTOSAR 4.x",
+        "menu6_text_content2_2_4" : "project participants",
+
+        "menu6_text_title2_2_2" : "Prerequisites",
+        "menu6_text_content2_2_5" : "RTOS, C language, AUTOSAR beginner",
+
+        "menu6_text_title2_2_3" : "Agenda",
+        "menu6_text_content2_2_6" : "Understanding Rte specification, Rte Event types and Rte API types<br/>How to make Rte API with ARXML<br/>Practice to make Atomic SWC sample<br/>How to use Rte API to SW-C<br/><br/>",
+        
+        "menu6_text_title2_3" : "Special Course",
+        "menu6_text_content2_3_1" : "Consulting to implement ECU software based on Classic Platform AUTOSAR 4.x",
+        "menu6_text_content2_3_2" : "",
+        
+        "menu6_text_title2_3_1" : "Target",
+        "menu6_text_content2_3_3" : "· ECU Developers of Volkswagon and Volvo Suppliers",
+        "menu6_text_content2_3_4" : "",
+
+        "menu6_text_title2_3_2" : "Agenda",
+        "menu6_text_content2_3_5" : "· AUTOSAR development process",
+        "menu6_text_content2_3_7" : "· How to prepare A sample",
+        "menu6_text_content2_3_9" : "· How to implement SW-C for A sample",
+        "menu6_text_content2_3_10" : "",
+        "menu6_text_content2_3_11" : "· How to implement diagnosis for B sample",
+        "menu6_text_content2_3_12" : "",      
+
+        "menu6_text_title3_1" : "Adaptive Platform",
+        
+        "menu6_text_title3_1_1" : "Target",
+        "menu6_text_content3_1_1" : "· Adaptive Platform prior development",
+        "menu6_text_content3_1_2" : "participants and potential participants",
+
+        "menu6_text_title3_1_2" : "Agenda",
+        "menu6_text_content3_1_3" : "· General view of Adaptive Platform",
+        "menu6_text_content3_1_4" : "",
+        "menu6_text_content3_1_5" : "· Consulting for implementation and Testing of Adaptive Platform project based on R17-10/R18-03",
+        "menu6_text_content3_1_6" : "",
+        "menu6_text_content3_1_7" : "· How to complete ISO26262 ASIL grade",
+    
+
+        "menu7_title" : "Engineering Service to complete AUTOSAR project",
+        "menu7_sub_title1" : "PopcornSAR has experiences in ECU production of SW project based on AUTOSAR for European OEMs",
+        "menu7_sub_title2" : "With these experiences, PopcornSAR can provide reliable engineering service to OEM and Tier1.",
+        "menu7_sub_title3" : "",
+        "menu7_text_title1" : "Key Points",
+        "menu7_text_content1_1" : "SW-C design and implementation",
+        "menu7_text_content1_2" : "Diagnosis design and implementation",
+        "menu7_text_content1_3" : "Network test with Panel designer of CANoe",
+
+        "menu8_title" : "Customization Tool for customers’ needs",
+        "menu8_sub_title" : "Many specific function tool are needed to implement AUTOSAR projects.<br/> PopcornSAR can support the needs of customers for customization tool."
+    },
+
+    "contactFooter" : {
+        "title1" : "Contact Us",
+        "title2" : "Contact Us",
+        "title3" : "Contact Us",
+        "title4" : "Contact Us",
+        "content1" : "E-Mail : sales@popcornsar.com",
+        "content2" : "Tel : +82-2-2188-3068"
+    },
+
+
+
+    "companyInfo" : {
+        "title" : "COMPANY INFO",
+        "subTitle" : "PopcornSAR",
+        "content_1" : "· AUTOSAR Development Partner",
+        "content_2" : "· Participation in AUTOSAR FT-UCM, FT-ST",
+        "content_3" : "· Experiences in ECU production of SW projects based on AUTOSAR",
+        "content_4" : "· Global Incubating Center 'Techcode' Member",
+        "content_5" : "· LG Vehicle Component Partner"
+    },
+
+    "contactUs" : {
+        "title" : "Contact Us",
+        "address" : "· Address : 8th KAIT Tower, Teheran-ro 306, Gangnam-gu, Seoul, Korea",
+        "email" : "· E-mail : contact@popcornsar.com",
+        "fax" : "· Fax : +82-2-2188-3055",
+        "tel" : "· Tel : +82-2-2188-3068"
+    },
+
+    "footer" : {
+        "copyright" : "Copyright (c) 2018 POPCORNSAR Co.,Ltd. All rights reserved.",
+        "address" : "PopcornSAR | 8th KAIT Tower, Teheran-ro 306, Gangnam-gu, Seoul, Korea | contact@popcornsar.com | TEL : +82-2-2188-3068 | FAX : +82-2-2188-3055"
+    }
+}

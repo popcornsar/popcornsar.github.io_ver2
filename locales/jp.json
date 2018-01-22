@@ -1,0 +1,216 @@
+{
+    "langver" : "jp",
+    
+    "header" : {
+        "title" : "PopcornSAR",
+        "menu" : "MENU",
+
+        "nav_home" : "ホーム",
+        "nav_businessArea" : "事業領域",
+        "nav_ProductOverview" : "製品紹介",
+        "nav_serviceOverview" : "サービス紹介",
+        "nav_companyInfo" : "会社情報",
+
+        "language" : "言語",
+        "kr" : "Korean",
+        "en" : "English",
+        "jp" : "Japanese"
+    },
+
+    "section_header" :{
+        "heading" : "ポップコーンザーへようこそ",
+        "exclamationMark" : "!",
+        "content" : "ポップコーンザーはAUTOSARツール専門企業です。"
+    },
+
+    
+    "businessArea" : {
+        "title" : "事業領域",
+        "sub_title" : "当社AUTOSAR専門企業としてAUTOSARプロジェクトにおけるお客様の成功に全力を尽くします。",
+        "content_1_1" : "AUTOSARツール開発",
+        "content_1_2" : "· Classic Platformツール",
+        "content_1_3" : "· Adaptive Platformツール",
+        "content_2_1" : "AUTOSAR 教育及びプロジェクトサポート",
+        "content_2_2" : "· AUTOSARオンサイト教育",
+        "content_2_3" : "· AUTOSARエンジニアリングサービス",
+        "content_2_4" : "(AP先行プロジェクトを含む)",
+        "content_3_1" : "In-house Tool開発",
+        "content_3_2" : "· 顧客の要求に応えてカスタマイズツールを開発",
+        "content_3_3" : "· 当社ツール(CP/AP)のカスタマイズを含みます。"
+    },
+
+    "productOverview" : {
+        "title" : "製品紹介",
+        "menu1" : "APツール",
+        "menu2" : "AP実装のフルセット",
+        "menu3" : "SaaSと結合したAP開発環境 ",
+        "menu4" : "APネットワーク及び診断テスト",
+        "menu5" : "CPツール",
+        "menu1_title" : "Adaptive Platformベースのシステム設計ツール",
+        "menu1_sub_title" : "< Classic Platformのシステム設計及びECUコンフィギュレーション機能をサポート >",
+        "menu1_text_title1" : "AUTOSARバージョンの対応状況",
+        "menu1_text_content1_1" : "· Adaptive Platform : R17/10に対応",
+        "menu1_text_content1_2" : "· Classic Platform : 4.0.3 ~ 4.3.0に対応",
+        "menu1_text_title2" : "Adaptive Platformの主な機能",
+        "menu1_text_content2_1" : "· AP Application Design",
+        "menu1_text_content2_2_1" : "· Application Manifest,",
+        "menu1_text_content2_2_2" : "Service Instance Manifest,",
+        "menu1_text_content2_2_3" : "Machine Manifest 生成",
+        "menu1_text_title3" : "Classic Platformの主な機能",
+        "menu1_text_content3_1" : "· システム設計機能",
+        "menu1_text_content3_2" : "· ECUコンフィギュレーション機能",
+        "menu1_text_content3_3" : "· VSMD作成機能",
+        "menu2_title" : "Adaptive Platform適用のためのフルセットを提供",
+        "menu2_text_title1" : "詳細情報",
+        "menu2_text_content1_1" : "Adaptive Platformの先行プロジェクトに必要とされるツールのフルセットを提供(設計ツール、ジェネレーター、サンプルコード、評価ボード)",
+        "menu2_text_content1_2" : "実践練習の可能なサンプルコード及びC++移植ガイドを提供",
+        "menu2_text_content1_3" : "ツールの使い方及びサンプルコードの解説など、お客様先で教育を提供(2日)",
+        "menu3_title" : "APの大容量プロジェクト管理の可能となるSaaSと結合したAP開発環境を提供",
+        "menu3_sub_title1_1" : "Adaptive Platform実装は既存のClassic Platformの実装と相当違います。最も違うところはプロジェクトで必要となる容量にあります。",
+        "menu3_sub_title1_2" : "APプロジェクト進行のため、必要な最小容量はおよそ2~30GBとなります。<br/>さらに、ソースコードの修正履歴を確認するため、およそ300GB以上となる可能性があります。",
+        "menu3_sub_title1_3" : "開発者自らのパソコンに300GBにあたるプロジェクトを進行するより、円滑なプロジェクト管理のため、SaaSと融合して使えるようになります。",
+        "menu3_text_title1" : "主な機能",
+        "menu3_text_content1" : "· Adaptive Platformプロジェクトのソースコードビルドの自動化",
+        "menu3_text_content2" : "· SaaSベースのプロジェクトのソースコート管理",
+        "menu3_text_content3" : "· 選択可能",
+        "menu3_text_content4_1" : "① パーブリッククラウドを利用",
+        "menu3_text_content4_2" : "② In-house向けのクラウドサーバーを利用",
+        "menu4_title" : "Adaptive Platform向け車載ネットワーク及び診断テストツール",
+        "menu4_text_title1" : "< Adaptive Platform向けのネットワーク及び診断テストの流れ >",
+        "menu4_text_title2" : "< Adaptive Platform向けのネットワーク及び診断テストのツール >",
+        "menu5_title" : "Classic PlatformベースのAUTOSARプロジェクトに必要な設計ツール",
+        "menu5_sub_title" : " Classic Platform向けのシステム設計及びECUコンフィギュレーション",
+        "menu5_text_title1" : "システム設計",
+        "menu5_text_content1_1" : "· ソフトウェアアーキテクチャ及びシステム設計 (SWCと Compositionの定義)",
+        "menu5_text_content1_2" : "· DSL(Domain Specific Languege)作成を通して簡単で素早くAUTOSARsystemが設計ができる",
+        "menu5_text_content1_3" : "· AUTOSARに準拠した49個の電子部品のサンプルを提供 ",
+        "menu5_text_title2" : "ECUコンフィギュレーション",
+        "menu5_text_content2_1" : "· AUTOSAR ECUの Basic Software(BSW)とRuntime Environment(RTE)を設定し、その検証可能",
+        "menu5_text_content2_2" : "· ユーザー設定パラメータ検証機能",
+        "menu5_text_content2_3" : "· VSMD(Vendor Specific Module Description)作成機能",
+        "menu5_tool_ver" : "バージョンの対応状況 : Classic Platform : 4.0.3 ~ 4.3.0"
+    },
+
+    "serviceOverview" : {
+        "title" : "サービス紹介",
+        "menu6" : "AUTOSARトレーニング",
+        "menu7" : "エンジニアリングサービス",
+        "menu8" : "In-house Tool開発",
+        
+        "menu6_title" : "AUTOSARベースの量産プロジェクトにために実践教育を提供",
+        "menu6_text_title1" : "教育の対応範囲",
+        "menu6_text_content1_1" : "Classic Platform : AUTOSAR 4.x ",
+        "menu6_text_content1_2" : "Adaptive Platform : R17-10",
+
+        "menu6_text_title2" : "Classic Platformコース別の概要",
+
+        "menu6_text_title3" : "Adaptive Platform 開発入門",
+       
+        "menu6_text_title2_1" : "初級",
+        "menu6_text_content2_1_1" : "Classic Platform AUTOSAR 4.x",
+        "menu6_text_content2_1_2" : "BSWと SW-Cの基礎",
+
+        "menu6_text_title2_1_1" : "対象者",
+        "menu6_text_content2_1_3" : "· Classic Platform AUTOSAR 4.x",
+        "menu6_text_content2_1_4" : "ビギナー(開発向け/管理者)",
+
+        "menu6_text_title2_1_2" : "予備知識",
+        "menu6_text_content2_1_5" : "UML, XML, C言語",
+
+        "menu6_text_title2_1_3" : "達成目標",
+        "menu6_text_content2_1_6" : "車載部品においてソフトウェア開発の標準となるAUTOSAR 4.xの用語知識とAUTOSAR仕様書の分析、ARXML作成やUML分析を通してSW-Cの再利用やBSW種類を学びます。<br/><br/><br/><br/>",
+        
+        "menu6_text_title2_2" : "中級",
+        "menu6_text_content2_2_1" : "Classic Platform AUTOSAR 4.x",
+        "menu6_text_content2_2_2" : "Rte プログラミング",
+        
+        "menu6_text_title2_2_1" : "対象者",
+        "menu6_text_content2_2_3" : "· Classic Platform AUTOSAR 4.x",
+        "menu6_text_content2_2_4" : "プロジェクトの関係者向け",
+
+        "menu6_text_title2_2_2" : "予備知識",
+        "menu6_text_content2_2_5" : "RTOS, C言語, AUTOSAR初級",
+
+        "menu6_text_title2_2_3" : "達成目標",
+        "menu6_text_content2_2_6" : "AUTOSARにおいてSW-Cが使用するRte APIをARXMLに出力し、使い方を学ぶためのプログラムとして、Atomic SWCの例題を通してRte APIのARXML設計方法を学びます。<br/><br/><br/>",
+        
+        "menu6_text_title2_3" : "高級",
+        "menu6_text_content2_3_1" : "Classic Platform AUTOSAR 4.x",
+        "menu6_text_content2_3_2" : "ヨーロッパOEM量産対応に関する<br/>コンサルティング",
+        "menu6_text_title2_3_1" : "対象者",
+        "menu6_text_content2_3_3" : "· 海外OEM向けの",
+        "menu6_text_content2_3_4" : "AUTOSARプロジェクトの関係者向け",
+
+        "menu6_text_title2_3_2" : "達成目標",
+        "menu6_text_content2_3_5" : "· 海外OEM向けのAUTOSAR開発",
+        "menu6_text_content2_3_6" : "プロセス及び診断の実装",
+        "menu6_text_content2_3_7" : "· 海外OEM向けのA Sampleに対応する方法",
+        "menu6_text_content2_3_8" : "",
+        "menu6_text_content2_3_9" : "· 海外OEM向けのA Sampleの",
+        "menu6_text_content2_3_10" : "ためのSW-C実装",
+        "menu6_text_content2_3_11" : "· 海外OEM向けのB Sampleの",
+        "menu6_text_content2_3_12" : "ための診断の実装",      
+
+        "menu6_text_title3_1" : "Adaptive Platform",
+        
+        "menu6_text_title3_1_1" : "対象者",
+        "menu6_text_content3_1_1" : "· Adaptive Platform先行開発を",
+        "menu6_text_content3_1_2" : "予定している関係者向け",
+
+        "menu6_text_title3_1_2" : "達成目標",
+        "menu6_text_content3_1_3" : "· Adaptive Platform R17-10/R18-03",
+        "menu6_text_content3_1_4" : "先行開発及びテスト方法に関するコンサルティング",
+        "menu6_text_content3_1_5" : "· Adaptive Platformにおける開発方法",
+        "menu6_text_content3_1_6" : "及び手順",
+        "menu6_text_content3_1_7" : "· Adaptive PlatformにおけるISO 26262 ASILを遵守する方法及び手順",
+        "menu6_text_content3_1_8" : "",
+
+        "menu7_title" : "AUTOSARプロジェクトの成功のためのエンジニアリングサービス提供",
+        "menu7_sub_title1" : "当社はヨーロッパOEMのAUTOSAR ECU量産プロジェクトを完了した経験があります。",
+        "menu7_sub_title2" : "AUTOSARプロジェクトにおけるお客様の成功に全力を尽くします。",
+        "menu7_sub_title3" : "特に、初めてAUTOSARプロジェクトを行うお客様の場合はトレーニングが含まれた特化したトレーニングを提供します。",
+        "menu7_text_title1" : "詳細情報",
+        "menu7_text_content1_1" : "海外OEM向けのSW-C設計及び実装",
+        "menu7_text_content1_2" : "海外OEMの要求に合わせて診断の実装及びテスト",
+        "menu7_text_content1_3" : "CANoeのPanel Designerを用いたネットワークテスト",
+
+        "menu8_title" : "お客様の要求に合わせてカスタマイズされたツールを開発",
+        "menu8_sub_title" : "円滑なAUTOSARプロジェクトを行うためには特定機能をサポートする多様な開発ツールが必要となります。<br/> 当社はお客様の要求に合わせてカスタマイズされたツールの開発をサポートします。"
+    },
+
+    "contactFooter" : {
+        "title1" : "製品に関するお問い合わせ（日本語対応）",
+        "title2" : "教育に関するお問い合わせ（日本語対応）",
+        "title3" : "エンジニアリングサービスに関するお問い合わせ（日本語対応）",
+        "title4" : "In-house Toolに関するお問い合わせ",
+        "content1" : "メールアドレス : sales@popcornsar.com",
+        "content2" : "お電話 : +82-2-2188-3068"
+    },
+    
+
+
+
+    "companyInfo" : {
+        "title" : "会社紹介",
+        "subTitle" : "ポップコーンザーとは？",
+        "content_1" : "· 韓国で唯一のAUTOSAR Development Partner",
+        "content_2" : "· AUTOSAR FT-UCM, FT-STの標準規格を制定の会議に参画中",
+        "content_3" : "· 海外OEMにて行っていたAUTOSARベースのECU量産SWプロジェクトを完了",
+        "content_4" : "· LG電子VC事業部のAUTOSARパートナー企業に登録済み"
+    },
+
+    "contactUs" : {
+        "title" : "お問い合わせ",
+        "address" : "· 住所 : 韓国ソウル市江南区テヘラン路306、KAITタワー8階",
+        "email" : "· メールアドレス : contact@popcornsar.com",
+        "fax" : "· Fax : +82-2-2188-3055",
+        "tel" : "· お電話 : +82-2-2188-3068"
+    },
+
+    "footer" : {
+        "copyright" : "Copyright (c) 2018 POPCORNSAR Co.,Ltd. All rights reserved.",
+        "address" : "PopcornSAR | 韓国ソウル市江南区テヘラン路306、KAITタワー8階 | contact@popcornsar.com | TEL : +82-2-2188-3068 | FAX : +82-2-2188-3055"
+    }
+
+
+}

@@ -19,12 +19,12 @@ function switchfunc(req){
 module.exports = function (req){
     var geo = req.session.geo;
     
-    if ( req.session.country === undefined && geo === null){ //localtest
+    if ( req.session.country === undefined && geo === undefined){ 
         req.session.country = 'KR';
         var result = switchfunc(req); 
         return result;
 
-    } else if(req.session.country === undefined && geo === null) { // 접속국가 체크
+    } else if(req.session.country === undefined && geo === null) {
         req.session.country = 'KR';
         var result = switchfunc(req); 
         return result;

@@ -36,9 +36,16 @@ router.post('/languageChange', function(req,res){
 });
 
 
-router.get('/404',function(req,res){
-    // console.log(jp);
-    res.render('404', {language : language(req) } );
+
+
+router.get('/download/:filename', function(req,res){
+    console.log('/download/:filename 라우터')
+    var filename=req.params.filename; // 각각의 파일을 구분하는 파일 ID값
+    console.log("파일이름"+filename);
+    var filepath = "./upload-folder/"+filename;
+    res.download(filepath,filename,function(err){
+        console.log(err);
+    });
 });
 
 

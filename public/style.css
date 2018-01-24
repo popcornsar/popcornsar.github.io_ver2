@@ -1212,6 +1212,20 @@ footer span.copyright, footer ul.quicklinks {
 }
 
 
+/* ================= errorPage ================= */
+
+.errorPage{
+    height: 100%;
+    text-align: center;
+    margin-bottom: 500px;   
+}
+.errorPage a{
+    color: #121213;
+    background-color: #dcb94e;
+}
+
+
+
 
 ::-moz-selection {
 	text-shadow: none;

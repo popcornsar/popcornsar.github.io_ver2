@@ -210,5 +210,10 @@
     "footer" : {
         "copyright" : "Copyright (c) 2018 POPCORNSAR Co.,Ltd. All rights reserved.",
         "address" : "PopcornSAR | 8th KAIT Tower, Teheran-ro 306, Gangnam-gu, Seoul, Korea | contact@popcornsar.com | TEL : +82-2-2188-3068 | FAX : +82-2-2188-3055"
+    },
+
+    "LayerPopup" : {
+        "header" : "Notice",
+        "body" : "Thank you very much for your interest in our booth<br/>at the 10th Automotive World in Tokyo last week.<br/>Unfortunately, after the exhibition, <br/>it was confirmed that the email was not received to <br/>sales@popcornsar.com until 4:00 P.M on January 25th. <br/>Now, we have fixed the problem, and we are ready to meet you.<br/>If you have any interest in our products and services,<br/>please contact us by e-mail again.<br/>Sorry for your inconvenience.<br/>Thank you<br/>"
     }
 }

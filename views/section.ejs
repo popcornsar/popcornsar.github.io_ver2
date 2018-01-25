@@ -713,10 +713,35 @@
         </div>
     </section>
 
+    <!-- Layer Pop-up -->
+    <div id="pop" class="container">
+        <div class="pop-container">
+            <div class="pop-header">
+                <h2 class="section-heading"> <span id="popHeader"></span></h2>
+            </div>
+            <div class="pop-body">
+               <p>
+                   <span id="popContent"></span>
+               </p>
+            </div>
+            <div class="pop-footer">
+                <hr/>
+                <a href="#" id="close" class="btn btn-warning">Close</a>
+            </div>
+        </div>
+    </div>
+
+
 <script>
 
     $(document).ready(function(){
 
+        // 팝업 설정
+        $('#close').click(function() {
+            $('#pop').hide();
+        });
+
+        // Navigation Bar를 통한 언어 전환
         $("#korea,#English,#Japanese").click(function(){
             
             var path = document.location.href;
@@ -739,6 +764,7 @@
         });
 
 
+        // 반응형 이미지 교체
         $(window).resize(function(){     
             if ( $('body').width() < 768 || $('body').width() < 1024 ){
                 // is mobile device
@@ -773,7 +799,7 @@
         }
        
 
-
+        // 다국어 태그 지환
         var ba_sub_title = "<%= language.businessArea.sub_title%>"
         var str_ba_sub_title =ba_sub_title.replace(/&lt;/g, '<').replace(/&gt;/g, '>');
         $("#businessArea_sub_title").html(str_ba_sub_title);
@@ -797,6 +823,15 @@
         var so_menu3_sub_title1_2= "<%= language.productOverview.menu3_sub_title1_2%>"
         var str_so_menu3_sub_title1_2 = so_menu3_sub_title1_2.replace(/&lt;/g, '<').replace(/&gt;/g, '>');
         $("#menu3_sub_title1_2").html(str_so_menu3_sub_title1_2);
+
+        var popup_header= "<%= language.LayerPopup.header%>"
+        var str_popup_header = popup_header.replace(/&lt;/g, '<').replace(/&gt;/g, '>');
+        $("#popHeader").html(str_popup_header);
+
+        var popup_body= "<%= language.LayerPopup.body%>"
+        var str_popup_body = popup_body.replace(/&lt;/g, '<').replace(/&gt;/g, '>');
+        $("#popContent").html(str_popup_body);
+
     });
 
     

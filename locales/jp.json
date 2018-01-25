@@ -210,7 +210,10 @@
     "footer" : {
         "copyright" : "Copyright (c) 2018 POPCORNSAR Co.,Ltd. All rights reserved.",
         "address" : "PopcornSAR | 韓国ソウル市江南区テヘラン路306、KAITタワー8階 | contact@popcornsar.com | TEL : +82-2-2188-3068 | FAX : +82-2-2188-3055"
+    },
+
+    "LayerPopup" : {
+        "header" : "お知らせ",
+        "body" : "先週の「第10回オートモーティブワールド」で <br/>当社のブースにお越しいただき、<br/>ご興味を持っていただいた来場客様へ心より感謝申し上げます。<br/>残念ですが、展示会後 メール受信不具合のため <br/>1月25日(木)午後4時まで受信したメールの確認ができませんでした。<br/>現在は正常に機能しますので、お手数をおかけしますが、<br/>弊社の製品及びサービスにご興味をお持ちの方は改めて <br/>sales@popcornsar.comへメールを送って頂ければ幸いです。<br/>"
     }
-
-
 }

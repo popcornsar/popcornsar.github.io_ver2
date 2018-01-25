@@ -1149,23 +1149,6 @@ div#menu8 div.imageArea img:nth-child(1){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ================= footer ================= */
 
 footer {
@@ -1225,6 +1208,44 @@ footer span.copyright, footer ul.quicklinks {
 }
 
 
+/* ================= Layer Pop-up ================= */
+#pop{
+    width : 80%;
+    max-width: 500px;
+    height : auto;
+    background:#ffffff;
+    color:black;
+    position:fixed;
+
+    top:100px;
+    left: 50%;
+    transform:translateX(-50%);
+    text-align:center;
+
+    /*border:2px solid #000;*/
+    border: 2px solid gainsboro;
+    border-radius: 25px;
+
+    padding: 10px;
+    padding-bottom : 30px;
+}
+#pop .pop-body{
+    margin-top : 50px;
+}
+#pop .pop-footer{
+    margin-top : 80px;
+}
+
+@media all and (max-width:467px){
+    #pop .pop-body{
+        margin-top : 30px;
+    }
+    #pop .pop-footer{
+        margin-top : 10px;
+    }
+
+}
+
 
 
 ::-moz-selection {
@@ -1244,122 +1265,4 @@ img::selection {
 img::-moz-selection {
 	background: 0 0
 }
-
-
-
-/* ================= contact ================= */
-/* section#contact {
-	background-color: #222;
-	background-image: url(/public/img/about/aboutbg.png);
-	background-position: center;
-	background-repeat: no-repeat;
-    font-family:  "source-han-sans-japanese",sans-serif,"Droid Serif","Helvetica Neue",Helvetica,Arial;
-    width: 100%;
-}
-
-section#contact #map{
-    width: 80%;
-    height: 500px;
-    background-color: wheat;
-    text-align: center;
-}
-section#contact div:FIRST-CHILD{
-	 text-align: center;
-}
-
-section#contact .section-heading {
-	color: #fff;
-    margin-bottom: 70px;
-}
-section#contact .section-content {
-    margin-top: 20px;
-    margin-bottom: 30px;
-    font-size: 17px;
-	color: #fff;
-}
-section#contact .iconsbox{
-    overflow: hidden;
-    margin: 0 auto;
-    position: relative;
-    padding-left: 100px;
-    padding-right: 85px;
-    text-align: center;
-}
-
-section#contact .iconsbox div{
-    float:left;
-}
-section#contact .iconsbox div img{
-    float: left;
-}
-section#contact .iconsbox div span{
-    float: left;
-    color: #fff;
-    margin-left: 10px;
-    font-size: 17px;
-}
-
-@media(max-width:768px){
-    section#contact .iconsbox{
-        text-align: center;
-    }
-    section#contact .iconsbox div{
-        float: none;
-        text-align: center;
-        margin-bottom: 20px;
-    }
-    section#contact .iconsbox div img{
-        float: none;
-    }
-    section#contact .iconsbox div span{
-        float: none;
-        color: #fff;
-        margin-left: 10px;
-        font-size: 14px;
-    }
-    
-}
-@media only screen and (max-device-width: 480px) {
-    
-    section#contact {
-        padding-bottom: 10px;
-    }
-   section#contact .section-content {
-        margin-top: 20px;
-        margin-bottom: 30px;
-        font-size: 14px;
-        color: #fff;
-    }
-    section#contact .section-heading {
-        margin-bottom: 30px;
-    }
-    
-    section#contact .loadmap img{
-        width: 100%;
-        height: auto; 
-    }
-    
-    section#contact .iconsbox{
-        text-align: center;
-        padding: 0px;
-    }
-    section#contact .iconsbox div{
-        float: none;
-        padding-right: 10px;
-        padding-left: 10px;
-        padding-bottom: 10px;
-    }
-    section#contact .iconsbox div img{
-        float: none;
-    }
-    section#contact .iconsbox div span{
-        float: none;
-    }
-}
- */
-
-
-
-
-
 

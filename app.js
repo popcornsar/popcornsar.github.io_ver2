@@ -8,6 +8,31 @@ var session = require('express-session');
 
 var geoip = require('geoip-lite'); // 접속국가 추적
 var language = require('./libs/language'); // 다국어 설정 모듈
+var config = require('./config/config');
+
+
+
+
+
+//////////////////// mongoDB 접속//////////////////////
+var mongoose = require('mongoose');
+mongoose.Promise = global.Promise;
+var autoIncrement = require('mongoose-auto-increment');
+
+var db = mongoose.connection;
+db.on('error', console.error);
+db.once('open', function() {
+    console.log('mongodb connect');
+});
+
+// fastcampus라는 db 생성, connect
+var connect = mongoose.connect(config.db_url, { useMongoClient: true });
+// primary key 자동 증가 플러그인 설정
+autoIncrement.initialize(connect);
+
+
+
+
 
 //////////////////// i18n 다국어 설정 //////////////////////
 i18n.configure({
@@ -69,7 +94,10 @@ app.use(function(req, res, next){ //404 error 처리 , 미들웨어 마지막에
     } else {
         ip = req.ip;
     } console.log("client IP is *********************" + ip);
- 
+
+    var geo = geoip.lookup(ip);
+    req.session.geo = geo;
+    console.log('geo정보==>',geo);
     var geo = geoip.lookup(ip);
     req.session.geo = geo;
     console.log('geo정보==>',geo);

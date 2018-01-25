@@ -44,6 +44,8 @@
     "http": "0.0.0",
     "i18n": "^0.8.3",
     "i18n-nodejs": "^3.0.0",
+    "mongoose": "^4.11.3",
+    "mongoose-auto-increment": "^5.0.1",
     "nodemon": "^1.12.1",
     "path": "^0.12.7",
     "request": "^2.83.0",

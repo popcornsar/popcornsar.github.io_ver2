@@ -280,7 +280,8 @@ header #myImage{
 }
 
 .navbar-custom .navbar-collapse{
-    border-color:rgba(255,255,255,.02);  
+    border-color:rgba(255,255,255,.02); 
+    background-color: black; 
 }
 .navbar-custom .navbar-toggle{
     background-color:#fed136;
@@ -365,6 +366,11 @@ header #myImage{
     }
     .navbar-custom.affix .navbar-brand{
         font-size:1.5em
+    }
+    #korea,
+    #English,
+    #Japanese {
+        cursor: pointer;
     }
 }
 	
@@ -1237,13 +1243,26 @@ footer span.copyright, footer ul.quicklinks {
 }
 
 @media all and (max-width:467px){
+    #pop{
+        padding: 10px;
+    }
+    #pop .section-heading{
+        font-size: 15px;
+        margin-top : 0;
+    }
     #pop .pop-body{
-        margin-top : 30px;
+        margin-top : 10px;
     }
     #pop .pop-footer{
         margin-top : 10px;
     }
-
+    #pop p{
+        font-size: 10px;
+    }
+    #pop hr{
+        margin-top:5px; 
+        margin-bottom:5px; 
+    }
 }
 
 

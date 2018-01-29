@@ -725,7 +725,7 @@
                </p>
             </div>
             <div class="pop-footer">
-                <hr/>
+                <hr>
                 <a href="#" id="close" class="btn btn-warning">Close</a>
             </div>
         </div>
@@ -742,7 +742,27 @@
         });
 
         // Navigation Bar를 통한 언어 전환
-        $("#korea,#English,#Japanese").click(function(){
+        $("#korea,#English,#Japanese").on("click",function(){
+            
+            var path = document.location.href;
+            var language = $(this).attr("value");
+
+            $.ajax({
+                url : '/languageChange',
+                type : 'POST',
+                data : {
+                    language : language
+                }
+            }).done(function(args){
+                if (arge.message === 'success'){
+                    document.location.href = path;
+                } else {
+                    // 성공적으로 변환 안됬을시 error메세지 출력하기.
+                    document.location.href = path;
+                }
+            });
+        });
+        $("#korea,#English,#Japanese").bind("touchstart",function(){
             
             var path = document.location.href;
             var language = $(this).attr("value");

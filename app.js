@@ -83,6 +83,14 @@ app.use(flash()); //플래시 메시지 관련
 //////////////////// router 미들웨어 등록 //////////////////////
 app.use('/', home);
 
+// http -> https 리다이렉트 코드
+app.use(function(req, res, next) {
+    if((req.get('X-Forwarded-Proto') !== 'https')) {
+        res.redirect('https://' + req.get('Host') + req.url);
+    } else {
+        next();
+    }
+});
 
 //////////////////// 404미들웨어 등록 //////////////////////
 app.use(function(req, res, next){ //404 error 처리 , 미들웨어 마지막에 둘것.

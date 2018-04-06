@@ -34,8 +34,8 @@ a:hover{
     color:#fec503;
 }
 .img-centered{ margin:0 auto; }
-.bg-light-gray{ background-color:#eee; }
-.bg-darkest-gray{ background-color:#222; }
+/*.bg-light-gray{ background-color:#eee; }*/
+/*.bg-darkest-gray{ background-color:#222; }*/
 .btn-primary{
     color:#fff;
     background-color:#fed136;
@@ -82,7 +82,7 @@ fieldset[disabled] .btn-primary:hover{
     font-size:18px;
     padding:20px 40px;
     position: relative;
-    top: 220px;
+    top: 120px;
 }
 .btn-xl2 img{
     width: 110%;
@@ -135,9 +135,10 @@ fieldset[disabled] .btn-xl:hover{
 /* ================ body ================ */
 
 body{
-    overflow-x:hidden;
     font-family:"source-han-sans-japanese","Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
-    -webkit-tap-highlight-color:#fed136;
+    position: relative;
+    /*-webkit-tap-highlight-color:#fed136;*/
+    /*overflow-x:hidden;*/
     width: 100%;
     height: 100%;
     margin: 0px;
@@ -147,19 +148,22 @@ body{
 
 /* ========== header ========== */
 header{
+    display : table;
+    width: 100%;
+    height: auto;
+    text-align:center;
+    color:#fff;
+    position: relative;
+
     background-image:url(/public/img/header-bg2.png);
     background-repeat:no-repeat;
     background-attachment:scroll;
     background-position:center center;
+
     -webkit-background-size:cover;
     -moz-background-size:cover;
-    background-size:cover;
     -o-background-size:cover;
-    text-align:center;
-    color:#fff;
-    width: 100%;
-    height: auto;
-    position: relative;
+    background-size:cover;
 }
 header .intro-text{
     padding-top:300px;
@@ -168,7 +172,7 @@ header .intro-text{
 
 header .intro-text .intro-lead-in{
     font-family:"source-han-sans-japanese","Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;font-style:italic; font-size:22px;
-    line-height:22px; 
+    line-height:22px;
     margin-bottom:25px;
 }
 
@@ -186,8 +190,7 @@ header .intro-text .intro-heading span{
 
 header .intro-text .intro-content{
     font-family:"source-han-sans-japanese",sans-serif,Montserrat,"Helvetica Neue",Helvetica,Arial;
-    /*text-transform:uppercase;*/
-    font-weight:100; 
+    font-weight:100;
     font-size:30px;
     line-height:40px;
 }
@@ -198,38 +201,32 @@ header #myImage{
 
  /* header mobile size */
 @media all and (max-width: 768px) {
-  
-
+    header .intro-text {
+        padding-top : 200px;
+        padding-bottom : 70px;
+    }
     header .intro-text .intro-heading{
-        font-family:"source-han-sans-japanese", sans-serif,Montserrat,"Helvetica Neue",Helvetica,Arial;
-        font-weight:600;
+        margin-top : 0;
         font-size:40px;
         line-height:40px;
-        margin-bottom:25px;
-        margin-top:120px;
-    }
-    header .intro-text .intro-heading span{
-       font-style: italic;
     }
     header .intro-text .intro-content{
-        font-family:"source-han-sans-japanese",sans-serif,Montserrat,"Helvetica Neue",Helvetica,Arial;
-        font-weight:100; 
-        font-size:25px;
+        font-size:23px;
         line-height:35px;
-        margin-bottom:5px;
     }
-    header #myImage{
-        margin-bottom: 50px;
+    header .intro-text .btn-xl2{
+        padding : 0;
+        position : static;
+        margin-top : 50px;
+        width: 13%;
     }
-
 }
 
  /* header tablet and laptop size */
 @media all and (min-width:768px) and (max-width:1024px){
-    
     header .intro-text{
-        padding-top:300px
-        ;padding-bottom:200px
+        padding-top:300px;
+        padding-bottom:200px
     }
     header .intro-text .intro-lead-in{
         font-family:"Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -242,7 +239,6 @@ header #myImage{
         line-height:75px;
         margin-bottom:50px
     }
-    
     header .intro-text .intro-heading span{
         font-style: italic;
     }
@@ -261,6 +257,9 @@ header #myImage{
     color:#fed136;
     font-family:"source-han-sans-japanese",Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     height: 50px;
+}
+.navbar-header div {
+    width: 158px;
 }
 .navbar-custom .navbar-brand .logoid{
     position: absolute;
@@ -345,73 +344,56 @@ header #myImage{
         -webkit-transition:padding .3s;
         -moz-transition:padding .3s;
         transition:padding .3s;
-        border:none
+        border:none;
+        overflow : hidden;
     }
-    
-    .navbar-custom .navbar-brand{
-        font-size:2em;
-        -webkit-transition:all .3s;
-        -moz-transition:all .3s;
-        transition:all .3s;
-        padding: 15px;
+    /*.navbar-custom #MyNavbar{*/
+        /*float : left;*/
+    /*}*/
+    .navbar-custom .navbar-brand img.logoid{
+        margin-top: 20px;
     }
-    
     /* ==== @media  nabvar 액션 ==== */
     .navbar-custom .navbar-nav>.active>a{
         border-radius:3px
     }
     .navbar-custom.affix{
-        background-color:#222;
+        background-color: black;
         padding:10px 0;
     }
     .navbar-custom.affix .navbar-brand{
         font-size:1.5em
     }
-    #korea,
-    #English,
-    #Japanese {
+    #korea, #English, #Japanese {
         cursor: pointer;
     }
 }
 	
 /* navbar tablet and laptop size */
-@media all and (min-width:768px) and (max-width:1024px){
-    .navbar-custom{
-        background-color:transparent;
-        padding:25px 0;
-        -webkit-transition:padding .3s;
-        -moz-transition:padding .3s;
-        transition:padding .3s;
-        border:none
+@media all and (min-width:768px) and (max-width:1200px){
+    #mainNav .navbar-right {
+        float: none!important;
+        margin-right: -15px;
     }
-    
-    .navbar-custom .navbar-brand{
-        font-size:2em;
-        -webkit-transition:all .3s;
-        -moz-transition:all .3s;
-        transition:all .3s;
-        padding: 15px;
+    #mainNav .navbar-header{
+        display : block;
+        float : none;
+        margin-top : 20px;
+        position:relative;
+        left:40%;
     }
-    
-    /* ==== @media  nabvar 액션 ==== */
-    .navbar-custom .navbar-nav>.active>a{
-        border-radius:3px
-    }
-    .navbar-custom.affix{
-        background-color:#222;
-        padding:10px 0;
-    }
-    .navbar-custom.affix .navbar-brand{
-        font-size:1.5em
-    }
+
 }
 
 /* ============ side navBar 액션 ============ */
 
-div.page_navi{
+div.page_navi {
     position:fixed; 
-    top:50%; right:5%;}
-div.page_navi ul{width:14px;}
+    top:50%; right:5%;
+}
+div.page_navi ul {
+    width:14px;
+}
 div.page_navi ul li.nav_btn{
     display:inline-block; 
     width:14px; 
@@ -422,8 +404,8 @@ div.page_navi ul li.nav_btn a{
     display:block;
     width:14px; height:14px; 
     background:url(/public/img/m_dot_nav.png) no-repeat top left;
-    text-indent:-7000px;}
-
+    text-indent:-7000px;
+}
 /* div.page_navi ul li.nav_btn a:focus, 클릭후 섹션 이동시 활성화 오류원인*/ 
 div.page_navi ul li.nav_btn a:hover{
     display:block; 
@@ -449,7 +431,6 @@ div.page_navi ul li.nav_btn.active a:hover{
 
 
 @media (min-width:768px){
-    
     .navbar-custom{
         background-color:black;
         /* padding:25px 0; */
@@ -458,7 +439,6 @@ div.page_navi ul li.nav_btn.active a:hover{
         transition:padding .3s;
         border:none
     }
-    
     .navbar-custom .navbar-brand{
         font-size:2em;
         -webkit-transition:all .3s;
@@ -486,29 +466,40 @@ div.page_navi ul li.nav_btn.active a:hover{
 section {
 	padding: 50px 0;
 }
-
 section h2.section-heading {
-	font-size: 40px;
+	font-size: 36px;
 	margin-top: 0;
-	margin-bottom: 15px;
+	margin-bottom: 20px;
 }
 
-section h3.section-subheading {
-	font-size: 16px;
-	text-transform: none;
-	font-weight: 400;
-	margin-bottom: 75px;
+section span.sub-title{
+	font-size: 18px;
+	font-weight: 200;
+    color : #ffffff;
 }
-
-.service-heading {
-	margin: 15px 0;
-	text-transform: none;
+section .paragraph-title{
+    font-size : 16px;
+    font-weight : 700;
+    margin-bottom : 10px;
+    list-style : none;
 }
-
+section .paragraph-content{
+    font-size : 14px;
+    font-weight : 200;
+    /*color : #666666;*/
+    list-style : none;
+}
 /* mobile size */
 @media all and (max-width: 768px) {
     section {
         padding: 10px 0;
+    }
+    section .paragraph-title{
+        font-size : 14px;
+    }
+    section .paragraph-content{
+        font-size : 12px;
+        font-weight : 400;
     }
 }
 
@@ -521,7 +512,7 @@ section h3.section-subheading {
 
 
 /* ================= businessArea ================= */
-#businessArea  {
+#businessArea {
     background: linear-gradient( to top, #edecec, #121213 );
 	background-position: center;
 	background-repeat: no-repeat;
@@ -530,16 +521,10 @@ section h3.section-subheading {
     padding : 100px 0;
     padding-bottom : 200px;
 }
+#businessArea .section-heading{
+    color: white;
+}
 
-#businessArea  h2.section-heading {
-    color : #ffffff;
-    margin-bottom : 50px;
-}
-#businessArea  span.sub-title {
-    color : #ffffff;
-    font-size : 25px;
-    font-weight: 400;
-}
 #businessArea  .business_content {
     margin-top : 50px;
 }
@@ -555,21 +540,16 @@ section h3.section-subheading {
 #businessArea .business_content .business_text div{
    margin-bottom : 20px; 
 }
-#businessArea .business_content .business_text ul li:nth-child(1){
-    font-size:  20px;
-    font-weight : 500;
-    margin-bottom : 10px;
+#businessArea .paragraph-content{
+    color : white;
 }
-#businessArea .business_content .business_text ul li{
-    font-size:  15px;
-    font-weight : 200;
-    list-style: none;
-}
-
 
 
 /* mobile size */
 @media all and (max-width:767px){
+    #businessArea .business_content .business_text ul{
+        padding-left : 0;
+    }
     #businessArea .business_content .business_text{
        text-align: center;
     }
@@ -592,13 +572,15 @@ section h3.section-subheading {
 #productOverview{
     background: linear-gradient( to top, #ffffff, #edecec );
     width: 100%;
-    padding-bottom: 100px;
     text-align: center;
     padding-bottom : 200px;
 }
 #productOverview .titleDiv{
-    margin-bottom: 50px;
+    margin-bottom: 30px;
  }
+#productOverview #tabmenu{
+    padding-left : 7%;
+}
 #tabmenu {
     text-align: center;
 }
@@ -610,11 +592,6 @@ section h3.section-subheading {
     border-radius: 5px;
     text-align: center;
 }
-#tabmenu ul li{
-    display: inline-block;
-    float : none;
-}
-
 #tabmenu ul li a{
     color: black;
     cursor: pointer;
@@ -636,7 +613,7 @@ section h3.section-subheading {
 }
 #tabmenu ul li.active a{
     margin-bottom: 0;
-    box-shadow: 0 2px 11px rgba(0,0,0,.5);
+    box-shadow: 0 1px 11px rgba(0,0,0,.2);
     color: #fff;
     background: #eec748;
 }
@@ -645,16 +622,20 @@ section h3.section-subheading {
    margin-right: 16px;
 }
 #tabmenu .tab-content{
-    margin-top: 50px;
+    margin-top: 40px;
  }
+#tabmenu .logoid {
+    width: 13%;
+    margin-bottom : 7px;
+    margin-right : 5px;
+}
 #tabmenu .tab-content span.title{
     display: block;
-    font-size : 30px;
+    font-size : 18px;
     font-weight: 500;
-    margin-bottom : 8px;
 }
 #tabmenu .tab-content  span.subtitle{
-    font-size : 20px;
+    font-size : 16px;
     font-weight: 500;
 }
 
@@ -676,23 +657,30 @@ section h3.section-subheading {
 div#menu1 .imageArea .btn {
     padding: 0;
 }
-/* div#menu1 .imageArea .col-md-8 {
-    margin-left: 50px;
-    margin-right: -50px;
-} */
+div#menu1 .imageArea .col-md-8 {
+    text-align: right;
+    padding-right: 3px;
+    padding-left : 0;
+}
+
+div#menu1 .imageArea .col-md-4{
+    text-align: left;
+    padding-left: 3px;
+    padding-right: 5px;
+}
 div#menu1 .imageArea .col-md-8 img,
 div#menu1 .imageArea .col-md-4 img{
-    width: 100%; 
+    width: 100%;
     height:auto; 
     vertical-align: middle;
 }
 
 div#menu1 .imageArea .col-md-4 div:nth-child(1){
-    margin-bottom: 5px;
+    margin-bottom: 1px;
 }
 div#menu1 .imageArea{
-    width: 100%;
-    margin: 30px auto;
+    width: 70%;
+    margin: 15px auto;
 }
 div#menu1 .modal-dialog{
     width: 70%;
@@ -706,6 +694,9 @@ div#menu1 .textDiv ul{
 }
  /* mobile size */
 @media all and (max-width: 768px) {
+    div#menu1 ul{
+        padding-left : 0;
+    }
     div#menu1 .textDiv ul{
         text-align: center;
     }
@@ -714,19 +705,28 @@ div#menu1 .textDiv ul{
         margin-right: 0px;
         margin-bottom :6px;
     }
+    #productOverview #tabmenu{
+        padding-left : 0;
+    }
     #tabmenu ul li{
         display: block;
     }
-    #tabmenu .menulist li:nth-child(3) a{
-        line-height:25px;
+    #tabmenu .nav-pills>li {
+        float : none;
     }
+
+    /* script로 제어 */
+    /*#tabmenu ul li:nth-child(3) a {*/
+        /*line-height:25px;*/
+    /*}*/
+
     #productOverview #tabmenu .menulist li:nth-child(3) a.active{
         line-height: 25px;
     }
 }
-
 /* tablet and laptop size */
 @media all and (min-width:768px) and (max-width:1024px){
+
     div#menu1 .imageArea .col-md-4 img{
         width: 100%; 
         height:auto; 
@@ -755,7 +755,7 @@ div#menu2 .textDiv {
     margin-top :30px; 
 }
 div#menu2 .imageArea img{
-    width: 100%; 
+    width: 80%;
     height:auto; 
     vertical-align: middle;
 }
@@ -792,7 +792,7 @@ div#menu4 div.textDiv {
     margin-top : 30px;
  }
  div#menu4 div.imageArea img{
-    width: 97%; 
+    /*width: 97%; */
     height:auto; 
     vertical-align: middle;
 }
@@ -806,7 +806,7 @@ div#menu5 div.imageArea {
     text-align: right;
 }
 div#menu5 div.imageArea img{
-    width: 100%; 
+    /*width: 100%; */
     height:auto; 
     vertical-align: middle;
     display: block;
@@ -819,7 +819,7 @@ div#menu5 div.imageArea .toolVer{
 }
 /* ======== productOverview footer ======== */
 .productFooter{
-    margin-top: 50px;
+    margin-top: 40px;
     text-align: left;
 }
 .productFooter .productFooter_header{
@@ -829,6 +829,11 @@ div#menu5 div.imageArea .toolVer{
     padding : 8px 15px;
     font-weight: 600;
     background-color : #eec748; 
+}
+.productFooter .productFooter_body div.row{
+    margin-left: 10px;
+    margin-right : 10px;
+    float: left;
 }
 .productFooter .productFooter_body img{
     margin-right : 10px;
@@ -841,11 +846,37 @@ div#menu5 div.imageArea .toolVer{
 
 /* ======== productOverview mobile ======== */ 
 @media all and (max-width:767px){
-    /* section#productOverview .container {
-        padding: 0 15px;
-        max-width: 100%;
-        width: auto;
-    } */
+    #tabmenu ul li a {
+        font-size : 15px;
+        font-weight : 400;
+    }
+    #tabmenu .logoid{
+        width: 30%;
+    }
+    #tabmenu .tab-content span.title,
+    #tabmenu .tab-content span.subtitle,
+    #tabmenu .tab-content div#menu3 span.subtitle{
+        font-size : 14px;
+        font-weight : 400;
+    }
+    div#menu3 div.imageArea img,
+    div#menu4 div.imageArea img,
+    div#menu5 div.imageArea img{
+        width: 100%;
+    }
+    div#menu5 div.imageArea {
+        text-align : center;
+    }
+    #tabmenu ul li{
+        margin-right : 16px;
+    }
+    .productFooter{
+        margin-left: 10px;
+        margin-right : 10px;
+    }
+    .productFooter .productFooter_body div.row{
+        margin-bottom : 10px;
+    }
 }
 
 
@@ -860,44 +891,54 @@ div#menu5 div.imageArea .toolVer{
 #servieceOverview{
     background: linear-gradient( to top, #edecec, #ffffff );
     width: 100%;
-    padding-bottom: 100px;
     text-align: center;
     padding-bottom : 200px;
+}
+#servieceOverview #tabmenu ul.nav{
+    padding-left : 20%;
+}
+#servieceOverview .paragraph-content{
+    font-size: 14px;
 }
 
 /* ======== menu6 ======== */
 
-div#menu6 div.content div.contentTitle{
+div#menu6 div.content div.col-md-9 div.row,
+div#menu6 div.content div.col-md-3 div.row{
+    margin-top : 30px;
+    margin-bottom : 30px;
+}
+div#menu6 div.content div.contentTitle,
+div#menu6 div.content div.contentCard{
     text-align: left;
  }
-div#menu6 div.content div.contentCard{
-    display: inline;
-}
+
+
 div#menu6 div.content div.contentCard div.card{
-    width : 23%;
+    width : 32%;
     border: 2px solid #dcb94e;
-    margin-right: 10px;
+    margin-right: 5px;
     padding :0;
 }
-div#menu6 div.content div.contentCard div.card:last-child{
-    width : 23%;
+div#menu6 div.content div.contentCard div.card li.paragraph-content{
+   font-size : 13px;
+}
+div#menu6 div.content div.contentCard div.col-md-3 div.card{
+    width : 100%;
     border: 2px solid #98b33f;
     margin-right: 10px;
     padding :0;
+    float: left;
 }
 
-div#menu6 div.content div.contentCard div.card:last-child{
-    float: right;
-}
 div#menu6 div.content div.contentCard div.card .card-header{
     border: 2px solid #dcb94e;
     background: #fcf1d0;
     display : block;
-    height: 100px;
+    height: 90px;
     margin-top: -2px;
     margin-left: -2px;
     margin-right: -2px;
-    padding-bottom : 10px;
 }
 div#menu6 div.content div.contentCard div.card:nth-child(2) .card-header{
     background: #fae8b4;
@@ -905,28 +946,18 @@ div#menu6 div.content div.contentCard div.card:nth-child(2) .card-header{
 div#menu6 div.content div.contentCard div.card:nth-child(3) .card-header{
     background: #f9e199;
 }
-div#menu6 div.content div.contentCard div.card:nth-child(4) .card-header{
+div#menu6 div.content div.contentCard div.col-md-3 div.card .card-header{
     border: 2px solid #98b33f;
     background: #bfd461;
     display : block;
-    height: 100px;
+    height: 90px;
     margin-top: -2px;
     margin-left: -2px;
     margin-right: -2px;
     padding-top : 23px;
     padding-bottom : 23px;
 }
-div#menu6 div.content div.contentCard div.card .card-header .textTitle,
-div#menu6 div.content div.contentCard div.card .card-body .textTitle{
-    font-size : 1.5rem;
-    margin-bottom : 5px;
-    font-weight: 800;
-}
-div#menu6 div.content div.contentCard div.card .card-header .textContent,
-div#menu6 div.content div.contentCard div.card .card-body .textContent{
-    font-size : 1.3rem;
-    font-weight: 500;
-}
+
 div#menu6 div.content div.contentCard div.card .card-header ul,
 div#menu6 div.content div.contentCard div.card .card-body ul{
     margin-top: 10px;
@@ -958,17 +989,25 @@ div#menu6 div.content div.contentCard div.card:nth-child(4) .card-body ul{
 
 /* mobile size */
 @media all and (max-width: 768px) {
-    div#menu6 div.content div.contentCard div.card{
-        width : 100%;
+    div#menu6 div.content div.contentCard div.card,
+    div#menu6 div.content div.contentCard div.col-md-3 div.card{
+        width : 90%;
+        margin:auto;
+        margin-bottom :10px;
     }
-    div#menu6 div.content div.contentCard div.card:last-child{
-        width : 100%;
-        float: none;
+    div#menu6 div.content div.contentCard div.col-md-3 div.card{
+      float: none;
     }
-    div#menu6 div.content div.contentCard div.card{
-        margin-bottom :10px; 
+    #servieceOverview #tabmenu ul.nav {
+        padding-left : 0;
     }
-   
+    #tabmenu ul {
+        padding-left : 0;
+    }
+    div#menu6 div.content div.contentTitle,
+    div#menu6 div.content div.contentCard {
+         text-align: center;
+    }
 }
 
 /* tablet and laptop size */
@@ -990,7 +1029,7 @@ div#menu6 div.content div.contentCard div.card:nth-child(4) .card-body ul{
 
 /* ======== menu7 ======== */
 div#menu7 div.titleDiv{
-    margin-bottom : 50px;
+    margin-bottom : 30px;
 }
 div#menu7 div.titleDiv span.subtitle{
     font-size: 16px;
@@ -1002,7 +1041,7 @@ div#menu7 div.imageArea{
 
 /* ======== menu8 ======== */
 div#menu8 div.titleDiv{
-    margin-bottom : 50px;
+    margin-bottom : 30px;
 }
 div#menu8 div.titleDiv span.subtitle{
     font-size: 16px;
@@ -1010,7 +1049,7 @@ div#menu8 div.titleDiv span.subtitle{
 }
 
 div#menu8 div.imageArea img{
-    width: 70%; 
+    width: 60%;
     height:auto; 
     vertical-align: middle;
     display : block;
@@ -1021,13 +1060,17 @@ div#menu8 div.imageArea img:nth-child(1){
     margin-bottom : 10px;
 }
 
-/* ======== servieceOverview footer ======== */ 
-/* productOverview와 공동 사용 */
+@media all and (max-width :768px){
+    div#menu7 div.titleDiv span.subtitle{
+        font-size : 14px;
+        font-weight : 400;
+    }
+    div#menu7 div.imageArea img,
+    div#menu8 div.imageArea img{
+        width : 100%;
+    }
 
-
-
-
-
+}
 
 
 
@@ -1044,11 +1087,10 @@ div#menu8 div.imageArea img:nth-child(1){
 
 
 #companyinfo .section-heading {
-	/*color: #fff;*/
     color:#fff; 
     text-shadow: 1px 1px 2px gray;
-    margin-top: 50px;
-    margin-bottom: 150px;
+    margin-top: 40px;
+    margin-bottom: 50px;
 }
 #companyinfo .infocontent .laptop{
 	float: right;
@@ -1070,12 +1112,10 @@ div#menu8 div.imageArea img:nth-child(1){
 #companyinfo ul li{
     color: #fff;
     font-family: "source-han-sans-japanese",sans-serif,"Droid Serif","Helvetica Neue",Helvetica,Arial;
-    font-size:  15px;
-    font-weight : 200;
+    font-size:  14px;
+    font-weight : 100;
     list-style: none;
 }
-
-
 #companyinfo .laptop img{
     width: 100%; 
     max-width: 760px; 
@@ -1083,34 +1123,10 @@ div#menu8 div.imageArea img:nth-child(1){
     vertical-align: middle
 }
 
-/* ================= membership ================= */
-#companyinfo .membership{
-    background-color: #ffffff;
-    height: auto;
-    width: 100%;
-    padding-bottom: 0px;
-    padding-top : 0px;
-}
-#companyinfo .membership .divsecond {
-    /* margin-top: 130px; */
-    margin-left: -50vw;
-    margin-bottom: 0;
-    padding-bottom: 20px;
-    background-color: #fff;
-    width: 100vw;
-    position: relative;
-    left: 50%;
-}
-#companyinfo .membership .member{ 
-    position: relative;
-    left: 5%;   
-}
 
-#companyinfo .membership .member img{
-    margin-left: 50px;
-    margin-top: 20px;
+#membership .membership-company div.col-md-4{
+    float : left;
 }
-
 
 
 /* mobile size */
@@ -1123,9 +1139,6 @@ div#menu8 div.imageArea img:nth-child(1){
     }
     #companyinfo .infocontent .laptop{
         margin-bottom: 20px;
-    }
-    #companyinfo .section-heading {
-        margin-bottom: 50px;
     }
     #companyinfo .infocontent{
         color: #fff;
@@ -1141,10 +1154,24 @@ div#menu8 div.imageArea img:nth-child(1){
         line-height: 25px;
         font-size: 14px;
     }
+
+    #companyinfo ul {
+        padding-left:0;
+    }
+    #companyinfo div.divsecond{
+        text-align: left;
+    }
     #companyinfo .membership .divsecond {
         /* margin-left: 0px; */
     }
-    
+    #membership .memvership-title{
+        margin-left : 15px;
+    }
+    #membership .membership-company div.col-md-4{
+        float: none;
+        display: block;
+        margin : 0 auto;
+    }
 }
 /* tablet and laptop size */
 /* @media all and (min-width:768px) and (max-width:1024px){

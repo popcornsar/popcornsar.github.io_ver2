@@ -13,7 +13,6 @@
         </div>
     </header>
 
-    
 
 
 
@@ -41,25 +40,25 @@
                     </div>
                     <!-- right content-->
                     <div class="col-md-4 business_text">
-                        <div class="contnet_1">
+                        <div>
                             <ul>
-                                <li><%= language.businessArea.content_1_1%></li>
-                                <li><%= language.businessArea.content_1_2%></li>
-                                <li><%= language.businessArea.content_1_3%></li>
+                                <li class="paragraph-title"><%= language.businessArea.content_1_1%></li>
+                                <li class="paragraph-content"><%= language.businessArea.content_1_2%></li>
+                                <li class="paragraph-content"><%= language.businessArea.content_1_3%></li>
                             </ul>
                         </div>
-                        <div class="contnet_2">
+                        <div>
                             <ul>
-                                <li><%= language.businessArea.content_2_1%></li>
-                                <li><%= language.businessArea.content_2_2%></li>
-                                <li><%= language.businessArea.content_2_3%><br/>&nbsp;&nbsp;&nbsp;<%= language.businessArea.content_2_4%></li>
+                                <li class="paragraph-title"><%= language.businessArea.content_2_1%></li>
+                                <li class="paragraph-content"><%= language.businessArea.content_2_2%></li>
+                                <li class="paragraph-content"><%= language.businessArea.content_2_3%><br/>&nbsp;&nbsp;&nbsp;<%= language.businessArea.content_2_4%></li>
                             </ul>
                         </div>
-                        <div class="contnet_3">
+                        <div>
                             <ul>
-                                <li><%= language.businessArea.content_3_1%></li>
-                                <li><%= language.businessArea.content_3_2%></li>
-                                <li><%= language.businessArea.content_3_3%></li>
+                                <li class="paragraph-title"><%= language.businessArea.content_3_1%></li>
+                                <li class="paragraph-content"><%= language.businessArea.content_3_2%></li>
+                                <li class="paragraph-content"><%= language.businessArea.content_3_3%></li>
                             </ul>
                         </div>
                     </div>
@@ -179,26 +178,26 @@
                         <div class="row textDiv">
                             <div class="col-md-4">
                                 <ul>
-                                    <li class="textTitle"><%= language.productOverview.menu1_text_title1%></li>
-                                    <li class="textContent"><%= language.productOverview.menu1_text_content1_1%></li>
-                                    <li class="textContent"><%= language.productOverview.menu1_text_content1_2%></li>
+                                    <li class="paragraph-title"><%= language.productOverview.menu1_text_title1%></li>
+                                    <li class="paragraph-content"><%= language.productOverview.menu1_text_content1_1%></li>
+                                    <li class="paragraph-content"><%= language.productOverview.menu1_text_content1_2%></li>
                                 </ul>
                             </div>
                             <div class="col-md-4">
                                 <ul>
-                                    <li class="textTitle"><%= language.productOverview.menu1_text_title2%></li>
-                                    <li class="textContent"><%= language.productOverview.menu1_text_content2_1%></li>
-                                    <li class="textContent"><%= language.productOverview.menu1_text_content2_2_1%><br/>
+                                    <li class="paragraph-title"><%= language.productOverview.menu1_text_title2%></li>
+                                    <li class="paragraph-content"><%= language.productOverview.menu1_text_content2_1%></li>
+                                    <li class="paragraph-content"><%= language.productOverview.menu1_text_content2_2_1%><br/>
                                         &nbsp;&nbsp;&nbsp;<%= language.productOverview.menu1_text_content2_2_2%> <br/>
                                         &nbsp;&nbsp;&nbsp;<%= language.productOverview.menu1_text_content2_2_3%></li>
                                 </ul>
                             </div>
                             <div class="col-md-4">
                                 <ul>
-                                    <li class="textTitle"><%= language.productOverview.menu1_text_title3%></li>
-                                    <li class="textContent"><%= language.productOverview.menu1_text_content3_1%></li>
-                                    <li class="textContent"><%= language.productOverview.menu1_text_content3_2%></li>
-                                    <li class="textContent"><%= language.productOverview.menu1_text_content3_3%></li>
+                                    <li class="paragraph-title"><%= language.productOverview.menu1_text_title3%></li>
+                                    <li class="paragraph-content"><%= language.productOverview.menu1_text_content3_1%></li>
+                                    <li class="paragraph-content"><%= language.productOverview.menu1_text_content3_2%></li>
+                                    <li class="paragraph-content"><%= language.productOverview.menu1_text_content3_3%></li>
                                 </ul>
                             </div>
                         </div>
@@ -207,8 +206,12 @@
                         <div class="row productFooter">
                             <div class="productFooter_header"> <span><%= language.contactFooter.title1%></span> </div>
                             <div class="productFooter_body">
-                                <img src="/public/img/productouverview/bar.png"> <span><%= language.contactFooter.content1%></span>
-                                <img src="/public/img/productouverview/bar.png"> <span><%= language.contactFooter.content2%></span>
+                                <div class="row">
+                                    <img src="/public/img/productouverview/bar.png"> <span class="call-email"><%= language.contactFooter.content1%></span>
+                                </div>
+                                <div class="row">
+                                    <img src="/public/img/productouverview/bar.png"> <span><%= language.contactFooter.content2%></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -235,8 +238,8 @@
                         </div>
 
                         <div class="row textDiv">
-                             <span class="textTitle"><%= language.productOverview.menu2_text_title1%></span><br/>
-                             <span class="textContent"><%= language.productOverview.menu2_text_content1_1%><br/>
+                             <span class="paragraph-title"><%= language.productOverview.menu2_text_title1%></span><br/>
+                             <span class="paragraph-content"><%= language.productOverview.menu2_text_content1_1%><br/>
                                 <%= language.productOverview.menu2_text_content1_2%><br/>
                                 <%= language.productOverview.menu2_text_content1_3%>
                             </span>
@@ -246,8 +249,12 @@
                         <div class="row productFooter">
                             <div class="productFooter_header"> <span><%= language.contactFooter.title1%></span> </div>
                             <div class="productFooter_body">
-                                <img src="/public/img/productouverview/bar.png"> <span><%= language.contactFooter.content1%></span>
-                                <img src="/public/img/productouverview/bar.png"> <span><%= language.contactFooter.content2%></span>
+                                <div class="row">
+                                    <img src="/public/img/productouverview/bar.png"> <span><%= language.contactFooter.content1%></span>
+                                </div>
+                                <div class="row">
+                                    <img src="/public/img/productouverview/bar.png"> <span><%= language.contactFooter.content2%></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -281,11 +288,11 @@
 
                             <div class="col-md-5 textDiv">
                                 <ul>
-                                    <li class="textTitle"><%= language.productOverview.menu3_text_title1%></li>
-                                    <li class="textContent"><%= language.productOverview.menu3_text_content1%></li>
-                                    <li class="textContent"><%= language.productOverview.menu3_text_content2%></li>
-                                    <li class="textContent"><%= language.productOverview.menu3_text_content3%></li>
-                                    <li class="textContent">
+                                    <li class="paragraph-title"><%= language.productOverview.menu3_text_title1%></li>
+                                    <li class="paragraph-content"><%= language.productOverview.menu3_text_content1%></li>
+                                    <li class="paragraph-content"><%= language.productOverview.menu3_text_content2%></li>
+                                    <li class="paragraph-content"><%= language.productOverview.menu3_text_content3%></li>
+                                    <li class="paragraph-content">
                                         <ul class="secUl">
                                             <li><%= language.productOverview.menu3_text_content4_1%></li>
                                             <li><%= language.productOverview.menu3_text_content4_2%></li>
@@ -299,8 +306,12 @@
                         <div class="row productFooter">
                             <div class="productFooter_header"> <span><%= language.contactFooter.title1%></span> </div>
                             <div class="productFooter_body">
-                                <img src="/public/img/productouverview/bar.png"> <span><%= language.contactFooter.content1%></span>
-                                <img src="/public/img/productouverview/bar.png"> <span><%= language.contactFooter.content2%></span>
+                                <div class="row">
+                                    <img src="/public/img/productouverview/bar.png"> <span><%= language.contactFooter.content1%></span>
+                                </div>
+                                <div class="row">
+                                    <img src="/public/img/productouverview/bar.png"> <span><%= language.contactFooter.content2%></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -327,16 +338,20 @@
                         </div>
 
                         <div class="row textDiv">
-                            <div class="col-md-6 textTitle"><%= language.productOverview.menu4_text_title1%></div>
-                            <div class="col-md-6 textTitle"><%= language.productOverview.menu4_text_title2%></div>
+                            <div class="col-md-6 paragraph-title"><%= language.productOverview.menu4_text_title1%></div>
+                            <div class="col-md-6 paragraph-title"><%= language.productOverview.menu4_text_title2%></div>
                         </div>
 
                         <!-- footer -->
                         <div class="row productFooter">
                             <div class="productFooter_header"> <span><%= language.contactFooter.title1%></span> </div>
                             <div class="productFooter_body">
-                                <img src="/public/img/productouverview/bar.png"> <span><%= language.contactFooter.content1%></span>
-                                <img src="/public/img/productouverview/bar.png"> <span><%= language.contactFooter.content2%></span>
+                                <div class="row">
+                                    <img src="/public/img/productouverview/bar.png"> <span><%= language.contactFooter.content1%></span>
+                                </div>
+                                <div class="row">
+                                    <img src="/public/img/productouverview/bar.png"> <span><%= language.contactFooter.content2%></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -358,19 +373,19 @@
                         <div class="row menu3_content">
                             <div class="col-md-6 textDiv">
                                  <ul>
-                                    <li class="textTitle"><%= language.productOverview.menu5_text_title1%></li>
-                                    <li class="textContent"><%= language.productOverview.menu5_text_content1_1%></li>
-                                    <li class="textContent"><%= language.productOverview.menu5_text_content1_2%></li>
-                                    <li class="textContent"><%= language.productOverview.menu5_text_content1_3%></li>
+                                    <li class="paragraph-title"><%= language.productOverview.menu5_text_title1%></li>
+                                    <li class="paragraph-content"><%= language.productOverview.menu5_text_content1_1%></li>
+                                    <li class="paragraph-content"><%= language.productOverview.menu5_text_content1_2%></li>
+                                    <li class="paragraph-content"><%= language.productOverview.menu5_text_content1_3%></li>
                                     <% if( language.productOverview.menu5_text_content1_4){%>
-                                        <li class="textContent"><%= language.productOverview.menu5_text_content1_4%></li>
+                                        <li class="paragraph-content"><%= language.productOverview.menu5_text_content1_4%></li>
                                     <% } %>
                                 </ul>
                                  <ul>
-                                    <li class="textTitle"><%= language.productOverview.menu5_text_title2%></li>
-                                    &nbsp;&nbsp;<li class="textContent"><%= language.productOverview.menu5_text_content2_1%></li>
-                                    <li class="textContent"><%= language.productOverview.menu5_text_content2_2%></li>
-                                    <li class="textContent"><%= language.productOverview.menu5_text_content2_3%></li>
+                                    <li class="paragraph-title"><%= language.productOverview.menu5_text_title2%></li>
+                                    <li class="paragraph-content"><%= language.productOverview.menu5_text_content2_1%></li>
+                                    <li class="paragraph-content"><%= language.productOverview.menu5_text_content2_2%></li>
+                                    <li class="paragraph-content"><%= language.productOverview.menu5_text_content2_3%></li>
                                 </ul>
                             </div>
 
@@ -384,8 +399,12 @@
                         <div class="row productFooter">
                             <div class="productFooter_header"> <span><%= language.contactFooter.title1%></span> </div>
                             <div class="productFooter_body">
-                                <img src="/public/img/productouverview/bar.png"> <span><%= language.contactFooter.content1%></span>
-                                <img src="/public/img/productouverview/bar.png"> <span><%= language.contactFooter.content2%></span>
+                                <div class="row">
+                                     <img src="/public/img/productouverview/bar.png"> <span><%= language.contactFooter.content1%></span>
+                                </div>
+                                <div class="row">
+                                    <img src="/public/img/productouverview/bar.png"> <span><%= language.contactFooter.content2%></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -415,10 +434,8 @@
 
 
                 <div class="tab-content">
-
                     <!-- menu6 --> 
                     <div id="menu6" class="tab-pane fade in active">
-
                         <!-- title --> 
                         <div class="titleDiv">
                             <span class="title">
@@ -426,127 +443,133 @@
                             </span>
                             <div>
                                 <ul>
-                                    <li class="textTitle"><%= language.serviceOverview.menu6_text_title1%></li>
-                                    <li class="textContent"><%= language.serviceOverview.menu6_text_content1_1%></li>
-                                    <li class="textContent"><%= language.serviceOverview.menu6_text_content1_2%></li>
+                                    <li class="paragraph-title"><%= language.serviceOverview.menu6_text_title1%></li>
+                                    <li class="paragraph-content"><%= language.serviceOverview.menu6_text_content1_1%></li>
+                                    <li class="paragraph-content"><%= language.serviceOverview.menu6_text_content1_2%></li>
                                 </ul>
                             </div>
                         </div>
                         
                         <!-- content -->
                         <div class="content">
-                            <!-- content title-->
-                            <div class="row contentTitle">
-                                <div class="col-md-9"><span class="textTitle"><%= language.serviceOverview.menu6_text_title2%></span></div>
-                                <div class="col-md-3"><span class="textTitle"><%= language.serviceOverview.menu6_text_title3%></span></div>
-                            </div>
-                            <!-- content card-->
                             <div class="row contentCard">
-                                <!-- content card_1-->
-                                <div class ="col-md-3 card">
-                                    <div class="card-header">
-                                        <ul>
-                                            <li class="textTitle"><%= language.serviceOverview.menu6_text_title2_1%></li>
-                                            <li class="textContent"><%= language.serviceOverview.menu6_text_content2_1_1%></li>
-                                            <li class="textContent"><%= language.serviceOverview.menu6_text_content2_1_2%></li>
-                                        </ul>
+                                <div class="col-md-9">
+                                    <div class="row">
+                                        <span class="paragraph-title"><%= language.serviceOverview.menu6_text_title2%></span>
                                     </div>
-                                    <div class="card-body">
-                                        <ul>
-                                            <li class="textTitle"><%= language.serviceOverview.menu6_text_title2_1_1%></li>
-                                            <li class="textContent"><%= language.serviceOverview.menu6_text_content2_1_3%></li>
-                                            <li class="textContent">&nbsp;&nbsp;<%= language.serviceOverview.menu6_text_content2_1_4%></li>
-                                        </ul>
-                                        <ul>
-                                            <li class="textTitle"><%= language.serviceOverview.menu6_text_title2_1_2%></li>
-                                            <li class="textContent"><%= language.serviceOverview.menu6_text_content2_1_5%></li>
-                                        </ul>
-                                        <ul>
-                                            <li class="textTitle"><%= language.serviceOverview.menu6_text_title2_1_3%></li>
-                                            <li class="textContent" id="serviceOverview_menu6_text_content2_1_6"></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <!-- content card_2-->
-                                <div class ="col-md-3 card">
-                                    <div class="card-header">
-                                        <ul>
-                                            <li class="textTitle"><%= language.serviceOverview.menu6_text_title2_2%></li>
-                                            <li class="textContent"><%= language.serviceOverview.menu6_text_content2_2_1%></li>
-                                            <li class="textContent"><%= language.serviceOverview.menu6_text_content2_2_2%></li>
-                                        </ul>
-                                    </div>
-                                    <div class="card-body">
-                                        <ul>
-                                            <li class="textTitle"><%= language.serviceOverview.menu6_text_title2_2_1%></li>
-                                            <li class="textContent"><%= language.serviceOverview.menu6_text_content2_2_3%></li>
-                                            <li class="textContent">&nbsp;&nbsp;<%= language.serviceOverview.menu6_text_content2_2_4%></li>
-                                        </ul>
-                                        <ul>
-                                            <li class="textTitle"><%= language.serviceOverview.menu6_text_title2_2_2%></li>
-                                            <li class="textContent"><%= language.serviceOverview.menu6_text_content2_2_5%></li>
-                                        </ul>
-                                        <ul>
-                                            <li class="textTitle"><%= language.serviceOverview.menu6_text_title2_2_3%></li>
-                                            <li class="textContent" id="serviceOverview_menu6_text_content2_2_6"></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <!-- content card_3 -->
-                                <div class ="col-md-3 card">
-                                    <div class="card-header">
-                                        <ul>
-                                            <li class="textTitle"><%= language.serviceOverview.menu6_text_title2_3%></li>
-                                            <li class="textContent"><%= language.serviceOverview.menu6_text_content2_3_1%></li>
-                                            <li class="textContent" id="serviceOverview_menu6_text_content2_3_2"></li>
-                                        </ul>
-                                    </div>
-                                    <div class="card-body">
-                                        <ul>
-                                            <li class="textTitle"><%= language.serviceOverview.menu6_text_title2_3_1%></li>
-                                            <li class="textContent"><%= language.serviceOverview.menu6_text_content2_3_3%><br/>
-                                            <li class="textContent">&nbsp;&nbsp;<%= language.serviceOverview.menu6_text_content2_3_4%></li>
-                                        </ul>
-                                        <ul>
-                                            <li class="textTitle"><%= language.serviceOverview.menu6_text_title2_3_2%></li>
-                                            <li class="textContent"><%= language.serviceOverview.menu6_text_content2_3_5%>
-                                                &nbsp;&nbsp;<%= language.serviceOverview.menu6_text_content2_3_6%><br/>
-                                                <%= language.serviceOverview.menu6_text_content2_3_7%>
-                                                &nbsp;&nbsp;<%= language.serviceOverview.menu6_text_content2_3_8%><br/>
-                                                <%= language.serviceOverview.menu6_text_content2_3_9%> 
-                                                &nbsp;&nbsp;<%= language.serviceOverview.menu6_text_content2_3_10%><br/>
-                                                <%= language.serviceOverview.menu6_text_content2_3_11%><br/>
-                                                &nbsp;&nbsp;<%= language.serviceOverview.menu6_text_content2_3_12%><br/>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <!-- content card_4 -->
-                                <div class ="col-md-3 card">
-                                    <div class="card-header">
-                                        <ul>
-                                            <li class="textTitle"><%= language.serviceOverview.menu6_text_title3_1%></li>
-                                        </ul>
-                                    </div>
-                                    <div class="card-body">
-                                        <ul>
-                                            <li class="textTitle"><%= language.serviceOverview.menu6_text_title3_1_1%></li>
-                                            <li class="textContent"><%= language.serviceOverview.menu6_text_content3_1_1%> <br/>
-                                            <li class="textContent">&nbsp;&nbsp;<%= language.serviceOverview.menu6_text_content3_1_2%></li>
-                                        </ul>
-                                        <ul>
-                                            <li class="textTitle"><%= language.serviceOverview.menu6_text_title3_1_2%></li>
-                                            <li class="textContent"><%= language.serviceOverview.menu6_text_content3_1_3%>
-                                                &nbsp;&nbsp;<%= language.serviceOverview.menu6_text_content3_1_4%><br/>
-                                                <%= language.serviceOverview.menu6_text_content3_1_5%>
-                                                &nbsp;&nbsp;<%= language.serviceOverview.menu6_text_content3_1_6%><br/>
-                                                <%= language.serviceOverview.menu6_text_content3_1_7%>
-                                                &nbsp;&nbsp;<%= language.serviceOverview.menu6_text_content3_1_8%><br/>
-                                            </li>
-                                        </ul>
+                                    <div class="row">
+                                        <!-- content card_1-->
+                                        <div class ="col-md-4 card">
+                                            <div class="card-header">
+                                                <ul>
+                                                    <li class="paragraph-title"><%= language.serviceOverview.menu6_text_title2_1%></li>
+                                                    <li class="paragraph-content"><%= language.serviceOverview.menu6_text_content2_1_1%></li>
+                                                    <li class="paragraph-content"><%= language.serviceOverview.menu6_text_content2_1_2%></li>
+                                                </ul>
+                                            </div>
+                                            <div class="card-body">
+                                                <ul>
+                                                    <li class="paragraph-title"><%= language.serviceOverview.menu6_text_title2_1_1%></li>
+                                                    <li class="paragraph-content"><%= language.serviceOverview.menu6_text_content2_1_3%></li>
+                                                    <li class="paragraph-content">&nbsp;&nbsp;<%= language.serviceOverview.menu6_text_content2_1_4%></li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="paragraph-title"><%= language.serviceOverview.menu6_text_title2_1_2%></li>
+                                                    <li class="paragraph-content"><%= language.serviceOverview.menu6_text_content2_1_5%></li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="paragraph-title"><%= language.serviceOverview.menu6_text_title2_1_3%></li>
+                                                    <li class="paragraph-content" id="serviceOverview_menu6_text_content2_1_6"></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- content card_2-->
+                                        <div class ="col-md-4 card">
+                                            <div class="card-header">
+                                                <ul>
+                                                    <li class="paragraph-title"><%= language.serviceOverview.menu6_text_title2_2%></li>
+                                                    <li class="paragraph-content"><%= language.serviceOverview.menu6_text_content2_2_1%></li>
+                                                    <li class="paragraph-content"><%= language.serviceOverview.menu6_text_content2_2_2%></li>
+                                                </ul>
+                                            </div>
+                                            <div class="card-body">
+                                                <ul>
+                                                    <li class="paragraph-title"><%= language.serviceOverview.menu6_text_title2_2_1%></li>
+                                                    <li class="paragraph-content"><%= language.serviceOverview.menu6_text_content2_2_3%></li>
+                                                    <li class="paragraph-content">&nbsp;&nbsp;<%= language.serviceOverview.menu6_text_content2_2_4%></li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="paragraph-title"><%= language.serviceOverview.menu6_text_title2_2_2%></li>
+                                                    <li class="paragraph-content"><%= language.serviceOverview.menu6_text_content2_2_5%></li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="paragraph-title"><%= language.serviceOverview.menu6_text_title2_2_3%></li>
+                                                    <li class="paragraph-content" id="serviceOverview_menu6_text_content2_2_6"></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- content card_3 -->
+                                        <div class ="col-md-4 card">
+                                            <div class="card-header">
+                                                <ul>
+                                                    <li class="paragraph-title"><%= language.serviceOverview.menu6_text_title2_3%></li>
+                                                    <li class="paragraph-content"><%= language.serviceOverview.menu6_text_content2_3_1%></li>
+                                                    <li class="paragraph-content" id="serviceOverview_menu6_text_content2_3_2"></li>
+                                                </ul>
+                                            </div>
+                                            <div class="card-body">
+                                                <ul>
+                                                    <li class="paragraph-title"><%= language.serviceOverview.menu6_text_title2_3_1%></li>
+                                                    <li class="paragraph-content"><%= language.serviceOverview.menu6_text_content2_3_3%><br/>
+                                                    <li class="paragraph-content">&nbsp;&nbsp;<%= language.serviceOverview.menu6_text_content2_3_4%></li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="paragraph-title"><%= language.serviceOverview.menu6_text_title2_3_2%></li>
+                                                    <li class="paragraph-content"><%= language.serviceOverview.menu6_text_content2_3_5%>
+                                                        &nbsp;&nbsp;<%= language.serviceOverview.menu6_text_content2_3_6%><br/>
+                                                        <%= language.serviceOverview.menu6_text_content2_3_7%>
+                                                        &nbsp;&nbsp;<%= language.serviceOverview.menu6_text_content2_3_8%><br/>
+                                                        <%= language.serviceOverview.menu6_text_content2_3_9%>
+                                                        &nbsp;&nbsp;<%= language.serviceOverview.menu6_text_content2_3_10%><br/>
+                                                        <%= language.serviceOverview.menu6_text_content2_3_11%><br/>
+                                                        &nbsp;&nbsp;<%= language.serviceOverview.menu6_text_content2_3_12%><br/>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-
+                                <div class="col-md-3">
+                                    <div class="row">
+                                        <span class="paragraph-title"><%= language.serviceOverview.menu6_text_title3%></span>
+                                    </div>
+                                    <div class="row">
+                                        <div class ="col-md-12 card">
+                                            <div class="card-header">
+                                                <ul>
+                                                    <li class="paragraph-title"><%= language.serviceOverview.menu6_text_title3_1%></li>
+                                                </ul>
+                                            </div>
+                                            <div class="card-body">
+                                                <ul>
+                                                    <li class="paragraph-title"><%= language.serviceOverview.menu6_text_title3_1_1%></li>
+                                                    <li class="paragraph-content"><%= language.serviceOverview.menu6_text_content3_1_1%> <br/>
+                                                    <li class="paragraph-content">&nbsp;&nbsp;<%= language.serviceOverview.menu6_text_content3_1_2%></li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="paragraph-title"><%= language.serviceOverview.menu6_text_title3_1_2%></li>
+                                                    <li class="paragraph-content"><%= language.serviceOverview.menu6_text_content3_1_3%>
+                                                        &nbsp;&nbsp;<%= language.serviceOverview.menu6_text_content3_1_4%><br/>
+                                                        <%= language.serviceOverview.menu6_text_content3_1_5%>
+                                                        &nbsp;&nbsp;<%= language.serviceOverview.menu6_text_content3_1_6%><br/>
+                                                        <%= language.serviceOverview.menu6_text_content3_1_7%>
+                                                        &nbsp;&nbsp;<%= language.serviceOverview.menu6_text_content3_1_8%><br/>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
@@ -554,8 +577,12 @@
                         <div class="row productFooter">
                             <div class="productFooter_header"> <span><%= language.contactFooter.title2%></span> </div>
                             <div class="productFooter_body">
-                                <img src="/public/img/productouverview/bar.png"> <span><%= language.contactFooter.content1%></span>
-                                <img src="/public/img/productouverview/bar.png"> <span><%= language.contactFooter.content2%></span>
+                                <div class="row">
+                                     <img src="/public/img/productouverview/bar.png"> <span><%= language.contactFooter.content1%></span>
+                                </div>
+                                <div class="row">
+                                    <img src="/public/img/productouverview/bar.png"> <span><%= language.contactFooter.content2%></span>
+                                </div>
                             </div>
                         </div>
 
@@ -563,8 +590,7 @@
 
                     <!-- menu7 --> 
                     <div id="menu7" class="tab-pane fade in">
-
-                        <!-- title --> 
+                        <!-- title -->
                         <div class="titleDiv">
                             <span class="title">
                                 <%= language.serviceOverview.menu7_title%>
@@ -587,10 +613,10 @@
 
                         <div class="row textDiv">
                             <ul>
-                                <li class="textTitle"><%= language.serviceOverview.menu7_text_title1%></li>
-                                <li class="textContent"><%= language.serviceOverview.menu7_text_content1_1%></li>
-                                <li class="textContent"><%= language.serviceOverview.menu7_text_content1_2%></li>
-                                <li class="textContent"><%= language.serviceOverview.menu7_text_content1_3%></li>
+                                <li class="paragraph-title"><%= language.serviceOverview.menu7_text_title1%></li>
+                                <li class="paragraph-content"><%= language.serviceOverview.menu7_text_content1_1%></li>
+                                <li class="paragraph-content"><%= language.serviceOverview.menu7_text_content1_2%></li>
+                                <li class="paragraph-content"><%= language.serviceOverview.menu7_text_content1_3%></li>
                             </ul>
                         </div>
 
@@ -598,8 +624,12 @@
                         <div class="row productFooter">
                             <div class="productFooter_header"> <span><%= language.contactFooter.title3%></span> </div>
                             <div class="productFooter_body">
-                                <img src="/public/img/productouverview/bar.png"> <span><%= language.contactFooter.content1%></span>
-                                <img src="/public/img/productouverview/bar.png"> <span><%= language.contactFooter.content2%></span>
+                                <div class="row">
+                                    <img src="/public/img/productouverview/bar.png"> <span><%= language.contactFooter.content1%></span>
+                                </div>
+                                <div class="row">
+                                    <img src="/public/img/productouverview/bar.png"> <span><%= language.contactFooter.content2%></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -633,8 +663,12 @@
                         <div class="row productFooter">
                             <div class="productFooter_header"> <span><%= language.contactFooter.title4%></span> </div>
                             <div class="productFooter_body">
-                                <img src="/public/img/productouverview/bar.png"> <span><%= language.contactFooter.content1%></span>
-                                <img src="/public/img/productouverview/bar.png"> <span><%= language.contactFooter.content2%></span>
+                                <div class="row">
+                                    <img src="/public/img/productouverview/bar.png"> <span><%= language.contactFooter.content1%></span>
+                                </div>
+                                <div class="row">
+                                    <img src="/public/img/productouverview/bar.png"> <span><%= language.contactFooter.content2%></span>
+                                </div>
                             </div>
                         </div>
                         
@@ -680,34 +714,58 @@
                         <li><%= language.contactUs.fax%></li>
                         <li><%= language.contactUs.tel%></li>
                     </ul>
-                    
-                   
                 </div>
             </div>
-            <div class="row membership">
-                <div class="container">
-                    <div class="row divsecond">
-                        <div class="col-lg-12 member">
-                            <img src="/public/img/icons/member.png" />
-                        </div>
-                        <div class="col-lg-12 text-center">
-                            <div class="col-md-4 col-sm-4">
-                                <a href="http://www.autosar.org/" target="_blank">
-                                    <img src="/public/img/departmentlogo1.png" class="img-responsive img-centered" alt="">
-                                </a>
-                            </div>
-                            <div class="col-md-4 col-sm-4">
-                                <a href="https://www.comasso.org/" target="_blank">
-                                    <img src="/public/img/departmentlogo2.png" class="img-responsive img-centered" alt="">
-                                </a>
-                            </div>
-                            <div class="col-md-4 col-sm-4">
-                                <a href="https://www.toppers.jp/" target="_blank">
-                                    <img src="/public/img/departmentlogo3.png" class="img-responsive img-centered" alt="">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+            <!--<div class="row membership">-->
+                <!--<div class="container">-->
+                    <!--<div class="row divsecond">-->
+                        <!--<div class="col-lg-12 member">-->
+                            <!--<img src="/public/img/icons/member.png" />-->
+                        <!--</div>-->
+                        <!--<div class="col-lg-12 text-center">-->
+                            <!--<div class="col-md-4 col-sm-4">-->
+                                <!--<a href="http://www.autosar.org/" target="_blank">-->
+                                    <!--<img src="/public/img/departmentlogo1.png" class="img-responsive img-centered" alt="">-->
+                                <!--</a>-->
+                            <!--</div>-->
+                            <!--<div class="col-md-4 col-sm-4">-->
+                                <!--<a href="https://www.comasso.org/" target="_blank">-->
+                                    <!--<img src="/public/img/departmentlogo2.png" class="img-responsive img-centered" alt="">-->
+                                <!--</a>-->
+                            <!--</div>-->
+                            <!--<div class="col-md-4 col-sm-4">-->
+                                <!--<a href="https://www.toppers.jp/" target="_blank">-->
+                                    <!--<img src="/public/img/departmentlogo3.png" class="img-responsive img-centered" alt="">-->
+                                <!--</a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        </div>
+    </section>
+
+    <section id="membership">
+        <div class="container">
+            <!--<div class="row divsecond">-->
+            <div class="row memvership-title">
+                <img src="/public/img/icons/member.png" />
+            </div>
+            <div class="row membership-company">
+                <div class="col-md-4">
+                    <a href="http://www.autosar.org/" target="_blank">
+                        <img src="/public/img/departmentlogo1.png" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://www.comasso.org/" target="_blank">
+                        <img src="/public/img/departmentlogo2.png" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://www.toppers.jp/" target="_blank">
+                        <img src="/public/img/departmentlogo3.png" class="img-responsive img-centered" alt="">
+                    </a>
                 </div>
             </div>
         </div>
@@ -740,6 +798,13 @@
 //        $('#close').click(function() {
 //            $('#pop').hide();
 //        });
+
+        // productOverview Tab Css 제어
+        var sheet = document.createElement('style');
+        if( "<%= language.langver%>" === "en"){
+            sheet.innerHTML= "#tabmenu ul li:nth-child(3) a {line-height:25px;}"
+            document.body.appendChild(sheet);
+        }
 
         // Navigation Bar를 통한 언어 전환
         $("#korea,#English,#Japanese").on("click",function(){
@@ -851,6 +916,9 @@
         var popup_body= "<%= language.LayerPopup.body%>"
         var str_popup_body = popup_body.replace(/&lt;/g, '<').replace(/&gt;/g, '>');
         $("#popContent").html(str_popup_body);
+
+
+
 
     });
 
